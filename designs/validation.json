@@ -1,0 +1,56 @@
+{
+  "source_sha256": "2d5265ff8abf9ead66b285841fb352d8559a71af8a5279cdfc13944e9f65b4a2",
+  "source_unchanged": true,
+  "designs": [
+    {
+      "rack_components": 55,
+      "tote_envelopes": 4,
+      "invalid_shapes": 0,
+      "tote_rack_interferences": 0,
+      "door_zone_interferences": 0,
+      "removal_path_interferences_with_restraints_released": 0,
+      "minimum_nominal_angled_wall_margin_mm": 25,
+      "shelf_top_heights_mm": [
+        101.6,
+        660.4,
+        1168.3999999999999
+      ],
+      "door_entry_depth_mm": 610,
+      "checks_do_not_establish": [
+        "load rating",
+        "actual HDX dimensions",
+        "door swing",
+        "anchor suitability",
+        "tongue weight",
+        "manufacturing joint design"
+      ],
+      "saved_and_reopened": true,
+      "file": "Front_V_Wire_Shelves.FCStd"
+    },
+    {
+      "rack_components": 55,
+      "tote_envelopes": 4,
+      "invalid_shapes": 0,
+      "tote_rack_interferences": 0,
+      "door_zone_interferences": 0,
+      "removal_path_interferences_with_restraints_released": 0,
+      "minimum_nominal_angled_wall_margin_mm": 25,
+      "shelf_top_heights_mm": [
+        101.6,
+        660.4,
+        1168.3999999999999
+      ],
+      "door_entry_depth_mm": 610,
+      "checks_do_not_establish": [
+        "load rating",
+        "actual HDX dimensions",
+        "door swing",
+        "anchor suitability",
+        "tongue weight",
+        "manufacturing joint design"
+      ],
+      "saved_and_reopened": true,
+      "file": "Front_V_Wood.FCStd"
+    }
+  ]
+}
