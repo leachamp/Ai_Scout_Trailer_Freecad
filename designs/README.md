@@ -13,6 +13,15 @@ The original [Trailer.FCStd](../Trailer.FCStd) remains unchanged. Both alternati
 are together on `design/front-v-shelving-options`, rather than separate branches,
 so they can be opened side by side.
 
+## Additional old-trailer-style variations
+
+The newer [wall-following designs](wall_following/README.md) use the owner's
+photos as a layout reference: wooden uprights with either white wire shelves
+or plywood, an open center aisle, and a shallow shelf just ahead of the side
+door. They extend along the walls rather than filling the front V.
+Those two additional models are on `design/wall-following-shelving`, which
+also retains the original alternatives below unchanged.
+
 ## Layout
 
 - Three shelf top surfaces: **4, 26, and 46 inches** above the floor.

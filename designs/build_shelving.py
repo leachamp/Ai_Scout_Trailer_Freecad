@@ -98,16 +98,20 @@ def original_reference(doc, group):
     return obj
 
 
-def wire_deck(top):
+def wire_deck(top, outline=OUTLINE):
     bottom = top - 8
+    xmin, xmax = min(p[0] for p in outline), max(p[0] for p in outline)
+    ymin, ymax = min(p[1] for p in outline), max(p[1] for p in outline)
     rods = []
-    for y in range(125, 1081, 40):
-        rods.append(Part.makeCylinder(2, 1700, App.Vector(-850, y, bottom + 2),
+    for y in range(ymin + 5, ymax + 1, 40):
+        rods.append(Part.makeCylinder(2, xmax - xmin + 70,
+                                      App.Vector(xmin - 30, y, bottom + 2),
                                       App.Vector(1, 0, 0)))
-    for x in range(-800, 811, 40):
-        rods.append(Part.makeCylinder(2, 1000, App.Vector(x, 100, bottom + 6),
+    for x in range(xmin + 20, xmax + 1, 40):
+        rods.append(Part.makeCylinder(2, ymax - ymin + 80,
+                                      App.Vector(x, ymin - 60, bottom + 6),
                                       App.Vector(0, 1, 0)))
-    return Part.makeCompound(rods).common(slab(OUTLINE, bottom, 8))
+    return Part.makeCompound(rods).common(slab(outline, bottom, 8))
 
 
 def tote(doc, group, name, size, x, y, level):
@@ -230,6 +234,13 @@ def build(variant):
     doc.recompute()
     report = validate(doc, totes, door, paths, deck_thickness, rail_height)
     filename = OUT / ("Front_V_Wood.FCStd" if wood else "Front_V_Wire_Shelves.FCStd")
+    save_model(doc, filename)
+    report["saved_and_reopened"] = True
+    report["file"] = filename.name
+    return report
+
+
+def save_model(doc, filename):
     if App.GuiUp:
         import FreeCADGui as Gui
 
@@ -275,9 +286,6 @@ def build(variant):
         assert not reopened.SideDoorKeepout.ViewObject.Visibility
         assert reopened.Shelf1.ViewObject.Visibility
     App.closeDocument(reopened.Name)
-    report["saved_and_reopened"] = True
-    report["file"] = filename.name
-    return report
 
 
 def overlap(a, b):

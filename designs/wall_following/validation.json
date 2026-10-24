@@ -1,0 +1,72 @@
+{
+  "existing_models_unchanged": true,
+  "existing_model_sha256": {
+    "Trailer.FCStd": "2d5265ff8abf9ead66b285841fb352d8559a71af8a5279cdfc13944e9f65b4a2",
+    "Front_V_Wire_Shelves.FCStd": "39bdb5bc2d96c07aae2228798fc30222584c4d7df6b1cf11ce247d1ec867f944",
+    "Front_V_Wood.FCStd": "0b83cdb4df61a3a34db5c3dd6c5b3cbe24a9cce96361f7f118ec7d39bf5441fb"
+  },
+  "designs": [
+    {
+      "rack_components": 129,
+      "shelf_top_heights_mm": [
+        457.2,
+        1016.0,
+        1524.0
+      ],
+      "door_side_shelf_max_depth_mm": 250.0,
+      "door_side_chamfered_tip_depth_mm": 190,
+      "left_aft_shelf_depth_mm": 350.0,
+      "right_shelf_depth_mm": 590.0,
+      "clear_height_below_lowest_bearers_mm": 385.2,
+      "continuous_checked_aisle_width_mm": 610,
+      "checked_aisle_y_range_mm": [
+        800,
+        2800
+      ],
+      "door_entry_depth_mm": 610,
+      "tote_envelopes": 4,
+      "invalid_shapes": 0,
+      "tote_rack_interferences": 0,
+      "walking_zone_interferences": 0,
+      "removal_interferences_with_front_rails_released": 0,
+      "limitations": [
+        "Unverified actual tote dimensions and trailer dimensions",
+        "No structural rating, joint design or approved anchorage",
+        "No verification of door swing, egress compliance or tongue weight"
+      ],
+      "file": "Wall_Following_Wire.FCStd",
+      "saved_and_reopened": true
+    },
+    {
+      "rack_components": 129,
+      "shelf_top_heights_mm": [
+        457.2,
+        1016.0,
+        1524.0
+      ],
+      "door_side_shelf_max_depth_mm": 250.0,
+      "door_side_chamfered_tip_depth_mm": 190,
+      "left_aft_shelf_depth_mm": 350.0,
+      "right_shelf_depth_mm": 590.0,
+      "clear_height_below_lowest_bearers_mm": 375.2,
+      "continuous_checked_aisle_width_mm": 610,
+      "checked_aisle_y_range_mm": [
+        800,
+        2800
+      ],
+      "door_entry_depth_mm": 610,
+      "tote_envelopes": 4,
+      "invalid_shapes": 0,
+      "tote_rack_interferences": 0,
+      "walking_zone_interferences": 0,
+      "removal_interferences_with_front_rails_released": 0,
+      "limitations": [
+        "Unverified actual tote dimensions and trailer dimensions",
+        "No structural rating, joint design or approved anchorage",
+        "No verification of door swing, egress compliance or tongue weight"
+      ],
+      "file": "Wall_Following_Plywood.FCStd",
+      "saved_and_reopened": true
+    }
+  ]
+}
