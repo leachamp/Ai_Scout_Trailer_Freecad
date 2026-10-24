@@ -1,0 +1,15 @@
+newmtl Material_1
+Kd 0.95 0.90 0.85
+Pr 1.00
+newmtl Material_2
+Kd 0.60 0.60 0.60
+Pr 1.00
+newmtl Material_3
+map_Kd textures/color.png
+Pr 1.00
+newmtl Material_4
+Kd 0.86 0.80 0.73
+Pr 1.00
+newmtl Material_5
+Kd 0.80 0.80 0.80
+Pr 1.00
